@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: "Montserrat", sans-serif; 
+}
+
+@layer base {
+  :root {
+    --primary-color: 6 17 60;
+    --accent-color: 255 140 50;
+    --secondary-dark: 28 38 77;
+    --secondary-light: 55 64 97;
+    --gray-color1: 221 221 221;
+    --gray-color2: 238 238 238;
+    --gray-color3: 238 240 242;
+    --gray-color4: 160 160 160;
+
+    /* Font */
+    --lf-line-height: 120%; /* Large font lineheight */
+    --sf-line-height: 150%; /* small font lineheight */
+    --base-size: 1.15rem;
+    --type-scale: 1.05;
+    --h5: calc(var(--base-size) * 0.85); /* Smallest font size */
+    --main-text: calc(var(--h5) * var(--type-scale));
+    --emph-text: calc(var(--main-text) * var(--type-scale));
+    --desc-text: calc(var(--emph-text) * var(--type-scale));
+    --h4: calc(var(--desc-text) * var(--type-scale));
+    --h3: calc(var(--h4) * var(--type-scale));
+    --h2: calc(var(--h3) * var(--type-scale) * var(--type-scale) * var(--type-scale));
+    --h1: calc(var(--h2) * var(--type-scale) * var(--type-scale) * var(--type-scale)); /* Largest font size */
+  }
+}
+
+@layer components {
+
+}
