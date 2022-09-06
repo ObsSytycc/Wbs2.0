@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body { 
   font-family: "Montserrat", sans-serif; 
 }
@@ -42,8 +31,35 @@ body {
     --h2: calc(var(--h3) * var(--type-scale) * var(--type-scale) * var(--type-scale));
     --h1: calc(var(--h2) * var(--type-scale) * var(--type-scale) * var(--type-scale)); /* Largest font size */
   }
+
+  @media screen and (min-width: 600px) {
+    :root {
+      --type-scale: 1.1;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {}
+  
+  @media screen and (min-width: 992px) {
+    :root {
+      --type-scale: 1.15;
+    }
+  }
 }
 
 @layer components {
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
 
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }

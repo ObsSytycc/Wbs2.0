@@ -1,0 +1,9 @@
+@tailwind components;
+
+@layer components {
+  .team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 6rem 1.5625rem;
+  }
+}

@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 
 const Home = lazy(() => import('./Home'));
 
-const PageRoutes = function() {
+const PageRoutes = () => {
 	return (
 		<Suspense fallback={<div>Loading</div>}>
 			<Routes>

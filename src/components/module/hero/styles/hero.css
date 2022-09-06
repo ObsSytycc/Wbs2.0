@@ -1,0 +1,16 @@
+@tailwind components;
+
+@layer components {
+  .hero {
+    background-image: linear-gradient(theme('colors.primary/0.85'), theme('colors.primary/0.85')), url(../../../../assets/png/hero-img.png), linear-gradient(theme('colors.primary'), theme('colors.primary'));
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(theme('colors.primary'), theme('colors.primary'))
+    }
+  }
+} 

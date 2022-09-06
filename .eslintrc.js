@@ -3,12 +3,18 @@ module.exports = {
 		browser: true,
 		es2021: true
 	},
-	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended', 'prettier'],
+	extends: ['plugin:react/recommended', 'prettier'],
 	overrides: [],
 	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		},
 		ecmaVersion: 'latest',
 		sourceType: 'module'
 	},
 	plugins: ['react'],
-	rules: {}
+	rules: {
+		'react/react-in-jsx-scope': 'off',
+		//'prettier/prettier': ['error', { endOfLine: 'auto' }]
+	}
 };
