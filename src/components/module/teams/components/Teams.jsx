@@ -11,7 +11,7 @@ const Teams = () => {
 	}, []);
 
 	return (
-		<section className="bg-white pt-24 pb-14">
+		<section className="bg-white pt-28 pb-24">
 			<div className="container flex flex-col gap-10">
 				<SectionHeader
 					title="Our Teams"

@@ -1,0 +1,65 @@
+@tailwind components;
+
+@layer components {
+  .reviews {
+    overflow: hidden;
+  }
+
+  .reviews .react-multi-carousel-track {
+    padding: 1em;
+    gap: 0 3%;
+  }
+
+  .reviews-list {
+    overflow: hidden;
+  }
+
+  .reviews .items-dot {
+    bottom: 5%;
+    align-items: center;
+  }
+
+  .reviews .items-dot li button {
+    width: 1em;
+    height: 1em;
+  }
+
+  .reviews .react-multi-carousel-dot--active button {
+    background-color: theme('colors.primary')
+  }
+
+  .reviews .items-dot li:first-child button,
+  .reviews .items-dot li:last-child button {
+    width: 1.875em;
+    height: 1.875em;
+  }
+
+  .reviews .items-dot li:first-child button {
+    margin-right: 1.5em;
+  }
+
+  .reviews .items-dot li:last-child button {
+    margin-left: 1em;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .reviews .items-dot li button {
+      width: 1.5em;
+      height: 1.5em;
+    }
+
+    .reviews .items-dot li:first-child button,
+    .reviews .items-dot li:last-child button {
+      width: 2.625em;
+      height: 2.625em;
+    }
+
+    .reviews .items-dot li:first-child button {
+      margin-right: 1.875em;
+    }
+
+    .reviews .items-dot li:last-child button {
+      margin-left: 1.5em;
+    }
+  }
+}
