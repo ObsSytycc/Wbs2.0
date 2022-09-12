@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageLayout } from '../layout';
-import { Hero, Teams, Projectsection, Mentorship, Reviews, Blog } from '../components/module';
+import { AboutContainer } from '../components/containers';
+import { Hero, Teams, Projectsection, Reviews, Blog } from '../components/module';
 
 function Home() {
 	return (
@@ -9,7 +10,7 @@ function Home() {
 				<Hero />
 				<main>
 					<Teams />
-					<Mentorship />
+					<AboutContainer />
 					<Projectsection />
 					<Reviews />
 					<Blog />

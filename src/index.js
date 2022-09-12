@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import gsap from 'gsap';
+import TextPlugin from 'gsap/TextPlugin';
 //import { Provider } from 'react-redux';
 import './styles/index.css';
 import App from './App';
@@ -10,6 +12,8 @@ import '@fontsource/montserrat';
 import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/600.css';
 import '@fontsource/montserrat/700.css';
+
+gsap.registerPlugin(TextPlugin);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
