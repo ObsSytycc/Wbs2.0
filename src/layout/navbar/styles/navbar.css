@@ -17,6 +17,14 @@
     justify-content: center;
   }
 
+  .nav-links-container {
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.3s ease-in-out;
+    -moz-transition: height 0.3s ease-in-out;
+    -webkit-transition: height 0.3s ease-in-out;
+  }
+
   .nav-content ul {
     list-style: none;
     justify-self: center;
@@ -55,13 +63,27 @@
       grid-template-columns: 40% 1fr;
     }
 
+    #hamburgerBtn {
+      display: none;
+    }
+
     .nav-content .nav-links {
       grid-template-columns: 1fr auto;
       gap: 5.625rem;
     }
 
+    .nav-links-container {
+      height: auto !important;
+    }
+
     .nav-content ul {
       flex-direction: row;
+    }
+  }
+
+  @media (min-width: 993px) and (max-width: 1140px) {
+    .nav-content .nav-links {
+      gap: 2rem;
     }
   }
 }
