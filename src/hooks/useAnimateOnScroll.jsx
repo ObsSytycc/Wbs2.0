@@ -11,7 +11,7 @@ export default function useAnimateOnScroll(tween = () => null) {
 				trigger: trigger.current,
 				start: '100px 90%',
 				toggleActions: 'play none none none',
-				fastScrollEnd: 3000,
+				fastScrollEnd: 5000,
 				once: true,
 				preventOverlaps: true
 			}
