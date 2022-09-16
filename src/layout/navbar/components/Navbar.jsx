@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 
 import Link from './Link';
@@ -13,6 +14,8 @@ const Navbar = () => {
 	const hamburgerTl = useRef(null);
 	const hamburgerRef = useRef(null);
 	const q = gsap.utils.selector(hamburgerRef);
+
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		hamburgerTl.current = gsap.timeline({ paused: true, reversed: true });
@@ -71,7 +74,7 @@ const Navbar = () => {
 								})}
 							</ul>
 							<div>
-								<Button value="Login" onclick={() => null} />
+								<Button value="Login" onclick={() => navigate('/login', { replace: true })} />
 							</div>
 						</div>
 					</div>

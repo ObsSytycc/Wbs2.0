@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Post = ({ title = '', content = '', image = '', author = {}, category = '', published = '' }) => {
 	return (
-		<article className="flex flex-col gap-4">
+		<article className="flex flex-col gap-4 pb-8 md:pb-0">
 			<div className="overflow-hidden rounded-2xl bg-slate-400">
 				<img src={image} className="h-64 w-full object-cover lg:h-80" alt="" />
 			</div>

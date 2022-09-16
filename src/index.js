@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import gsap from 'gsap';
 import TextPlugin from 'gsap/TextPlugin';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 //import { Provider } from 'react-redux';
 import './styles/index.css';
 import App from './App';
@@ -13,7 +14,9 @@ import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/600.css';
 import '@fontsource/montserrat/700.css';
 
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(TextPlugin, ScrollTrigger);
+gsap.core.globals('ScrollTrigger', ScrollTrigger);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
