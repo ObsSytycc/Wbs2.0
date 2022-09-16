@@ -44,6 +44,7 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem 2.5rem;
     list-style: none;
   }
@@ -65,6 +66,10 @@
   @media only screen and (min-width: 720px) {
     #footer .footer-content {
       grid-template-columns: auto 1fr;
+    }
+
+    #footer .social-media-list {
+      justify-content: flex-start;
     }
   }
 }

@@ -2,13 +2,12 @@
   border-radius: 30px 30px 0px 0px;
 }
 
-.projects .project-list {
+.projects .project-list > div {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3.125rem;
 }
 
 .projects .sytycc-project-card {
-  overflow: hidden;
   box-shadow: 1px 12px 30px rgba(0, 0, 0, 0.15);
 }
 

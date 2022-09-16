@@ -3,7 +3,16 @@ import PropTypes from 'prop-types';
 
 const ReviewsItem = ({ id = '', r_rating = 0, r_message = '', r_details = {} }) => {
 	return (
-		<article id={`reviews-${id}`} className="w-[100%] rounded-r-xl rounded-l-xl bg-white py-16 px-6 shadow-3xl">
+		<article
+			id={`reviews-${id}`}
+			className="relative w-[100%] rounded-r-xl rounded-l-xl bg-white py-16 px-6 shadow-3xl"
+		>
+			<div
+				className="absolute -top-[20px] left-0 flex w-full justify-center overflow-hidden rounded-[20px]"
+				style={{ zIndex: -1 }}
+			>
+				<span className="mx-auto inline-block h-10 w-[95%] rounded-[20px] bg-primary"></span>
+			</div>
 			<div>
 				<div className="flex items-center justify-center gap-2">
 					{Array.from(Array(r_rating), (_, indx) => {

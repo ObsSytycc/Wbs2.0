@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { fade, Timer } from '../../../../utils';
+import { Timer } from '../../../../utils';
+import { animation } from '../../../../utils';
 import '../styles/hero.css';
 import { Button } from '../../../ui';
 import { svgs, pngs } from '../../../../assets';
@@ -20,13 +21,13 @@ const Herosection = () => {
 		tl1.current = gsap.timeline({ onComplete: completedLeftAnim });
 
 		tl1.current
-			.add(fade.in(heroRef.current))
-			.add(fade.in(q('.magnifying'), { xPercent: 0, duration: 1 }, { xPercent: 150 }), 'start')
-			.add(fade.in(q('.gear'), { yPercent: 0, duration: 1 }, { yPercent: -100 }), 'start')
-			.add(fade.in(q('.toggler'), { yPercent: 0, duration: 1 }, { yPercent: 150 }), 'start')
-			.add(fade.in(q('.programmer'), { scale: 1, duration: 1 }, { scale: 0.5 }), 'start')
-			.add(fade.in(q('.hero-text'), { yPercent: 0, duration: 1 }, { yPercent: 100 }), 'start')
-			.add(fade.in(q('.btn-container'), { yPercent: 0, duration: 1 }, { yPercent: 150 }), '-=0.5');
+			.add(animation.fade(heroRef.current))
+			.add(animation.fade(q('.magnifying'), { xPercent: 150 }, { xPercent: 0, duration: 1 }), 'start')
+			.add(animation.fade(q('.gear'), { yPercent: -100 }, { yPercent: 0, duration: 1 }), 'start')
+			.add(animation.fade(q('.toggler'), { yPercent: 150 }, { yPercent: 0, duration: 1 }), 'start')
+			.add(animation.fade(q('.programmer'), { scale: 0.5 }, { scale: 1, duration: 1 }), 'start')
+			.add(animation.fade(q('.hero-text'), { yPercent: 100 }, { yPercent: 0, duration: 1 }), 'start')
+			.add(animation.fade(q('.btn-container'), { yPercent: 150 }, { yPercent: 0, duration: 1 }), '-=0.5');
 
 		return () => tl1.current.kill();
 	}, []);
