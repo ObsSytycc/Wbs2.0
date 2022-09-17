@@ -30,8 +30,8 @@ const ReviewsItem = ({ id = '', r_rating = 0, r_message = '', r_details = {} }) 
 					<p className="py-6 text-center  text-sm font-light">{r_message}</p>
 					<div className="w-1/3 border-b-2 border-[#818181]"></div>
 				</div>
-				<div className="mx-auto mt-6 w-32 rounded-full bg-amber-100">
-					<img src={r_details.image} className="h-32" alt="" />
+				<div className="mx-auto mt-6 w-32 overflow-hidden rounded-full bg-amber-100">
+					<img src={r_details.image} className="h-32 max-w-full" alt="" />
 				</div>
 				<p className="mt-4 text-center text-base font-normal">{r_details.codeName}</p>
 				<small className="block text-center text-sm font-normal text-accent">{r_details.role}</small>

@@ -12,8 +12,8 @@ const Post = ({ title = '', content = '', image = '', author = {}, category = ''
 				<h4 className="mb-4 text-base-lg font-bold leading-[50px] text-primary">{title}</h4>
 				<p className="mb-4 text-base-md font-medium leading-slh">{content}</p>
 				<div className="author-details items-center">
-					<div className="rounded-full bg-orange-300">
-						<img src={author.image} className="h-full w-full" alt={`Image of the ${author.name}`} />
+					<div className="overflow-hidden rounded-full bg-orange-300">
+						<img src={author.image} className="h-[80px] max-w-full" alt={`Image of the ${author.name}`} />
 					</div>
 					<div>
 						<h5 className="mb-2 text-sm font-semibold">{author.name}</h5>
