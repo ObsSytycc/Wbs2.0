@@ -18,7 +18,7 @@ const Teams = () => {
 			<div className="container flex flex-col gap-10">
 				<SectionHeader
 					title="Our Teams"
-					text="Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, incididunt ut labore et dolore magna aliqua.  incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,  incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+					text="Our Mission at SYTYCC is to support and inspire growth, provide network opportunities whilst collaborating, using a hands-on approach to create a better future and have fun along the way."
 				/>
 				<TeamList list={cpyList} />
 			</div>

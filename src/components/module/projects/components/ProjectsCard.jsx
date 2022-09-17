@@ -10,11 +10,11 @@ const ProjectsCard = ({ name = '', details = {}, path = '' }) => {
 			</div>
 			<div className="card-body flex items-center justify-between py-6 px-5">
 				<div className="project-info">
-					<h3 className="mb-2 text-base-md font-bold leading-slh text-accent">{name}</h3>
-					<p className="text-capitalize text-dark mb-2 text-base-md font-semibold leading-slh">
+					<h3 className="mb-2 text-base font-bold leading-slh text-accent">{name}</h3>
+					<p className="text-capitalize text-dark mb-2 text-base font-semibold leading-slh">
 						Project Team: {details.doneBy}
 					</p>
-					<p className="text-base leading-slh text-gray-500">Launch Date: {details.launch}</p>
+					<p className="text-sm leading-slh text-gray-500">Launch Date: {details.launch}</p>
 				</div>
 				<Link to={path} className="translate-y-4">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 40 40">
