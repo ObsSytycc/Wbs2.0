@@ -1,8 +1,9 @@
+import React from 'react';
 import PageRoutes from './pages';
 
 function App() {
 	return (
-		<div className="App">
+		<div>
 			<PageRoutes />
 		</div>
 	);
